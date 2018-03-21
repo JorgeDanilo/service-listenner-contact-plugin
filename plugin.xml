@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="contact.background.service.observer" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>ContactBroadcsat</name>
+    <description></description>
+    <license>MIT</license>
+    <keywords></keywords>
+
+    <platform name="android">
+
+        <js-module src="www/ContactBroadcsat.js" name="ContactBroadcsat">
+            <runs />
+            <clobbers target="ContactBroadcsat" />
+        </js-module>
+      
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ContactBroadcsat">
+            <param name="android-package" value="br.com.ContactBroadcsat" />
+            <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+         <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <service android:name="br.com.ContactWathService">
+            </service>
+        </config-file>
+
+        <source-file src="src/br/com/ContactBroadcsat.java" target-dir="src/br/com/" />
+        <source-file src="src/br/com/ContactWathService.java" target-dir="src/br/com/" />
+        <source-file src="src/br/com/MyContentObserver.java" target-dir="src/br/com/" />
+
+    </platform>
+
+</plugin>
