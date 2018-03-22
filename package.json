@@ -1,11 +1,20 @@
 {
   "name": "contact-broadcsat",
-  "version": "0.0.1",
-  "cordova": {
-    "id": "contact.background.service.observer",
-    "platforms": [
-      "android"
-    ]
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "description": "Contact Broadcsat"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JorgeDanilo/service-listenner-contact-plugin.git"
+  },
+  "keywords": [],
+  "author": "jdgomes <danilo91519188@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JorgeDanilo/service-listenner-contact-plugin/issues"
+  },
+  "homepage": "https://github.com/JorgeDanilo/service-listenner-contact-plugin#readme"
 }
